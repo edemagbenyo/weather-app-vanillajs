@@ -1,0 +1,30 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "Weather information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edemagbenyo/weather-app-vanillajs.git"
+  },
+  "keywords": [
+    "js",
+    "eslint",
+    "webpack"
+  ],
+  "author": "edemagbenyo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edemagbenyo/weather-app-vanillajs/issues"
+  },
+  "homepage": "https://github.com/edemagbenyo/weather-app-vanillajs#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
