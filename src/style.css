@@ -5,3 +5,10 @@
 body{
   background: aqua;;
 }
+.container{
+  background-color: rgba(145, 62, 62, .5);
+  width:40%;
+  height:auto;
+  margin:20px auto;
+  padding: 30px;;
+}
