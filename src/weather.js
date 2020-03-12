@@ -24,9 +24,9 @@ export default class Weather {
       temp_min: data.main.temp_min,
       temp_max: data.main.temp_max,
       feels_like: data.main.feels_like,
-      weather:data.weather[0].main
+      weather:data.weather[0].main,
+      icon:data.weather[0].icon
     }
-    console.log(data);
     return weatherInfo
   }
 }
