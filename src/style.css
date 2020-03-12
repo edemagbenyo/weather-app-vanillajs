@@ -34,6 +34,10 @@ form button, .conversion button{
   color:white;
   border-radius: 5px;
 }
+form .error{
+  font-size: 12px;
+  margin: 5px 0 ;
+}
 .container >*{
   width: 100%;
   text-align: center;
@@ -66,7 +70,12 @@ form button, .conversion button{
 }
 .weather-card img{
   margin: 0;
+  width: 50px;
 }
 .location p{
   display: inline;
+}
+.loading{
+  width: 40px;
+  margin:5px 0;
 }

@@ -1,10 +1,12 @@
 import './style.css'
+import loadingImg from './images/loading.gif'
 import Weather from './weather'
 window.onload = function(){
   const form = document.querySelector('form')
   const inputLocation = document.querySelector('#location')
   const body = document.querySelector('.body')
   const icon = document.querySelector('.icon')
+  const loading = document.querySelector('.loading')
   const pCity = document.querySelector('.city')
   const pCountry = document.querySelector('.country')
   const pTemp = document.querySelector('.temp')
@@ -20,7 +22,7 @@ window.onload = function(){
       errorSpan.textContent = "Location is required"
       return
     }else{
-      errorSpan.textContent = "loading..."
+      loading.setAttribute('src',loadingImg)
     }
     const weather = new Weather(inputLocation.value)
     weather.getWeatherData().then(data=>{
@@ -31,8 +33,12 @@ window.onload = function(){
       pCountry.innerHTML = data.countryCode
       const span = pFeelLike.querySelector('span')
       span.innerHTML=weather.convertKtoC(data.feels_like)
-      errorSpan.textContent = ""
+      loading.setAttribute('src','');
       icon.setAttribute('src', `http://openweathermap.org/img/wn/${data.icon}@2x.png`);
+      errorSpan.textContent = ""
+    }).catch(e=>{
+      loading.setAttribute('src','');
+      errorSpan.textContent = "Enter a correct location. eg. Accra"
     })
   })
 }
