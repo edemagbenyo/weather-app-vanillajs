@@ -17,7 +17,7 @@ import Weather from './weather';
   const btnFaren = document.querySelector('button.far');
 
   let tempK; let tempKmin; let
-    tempKmax;
+    tempKmax,tempFeels;
   let weather;
 
   form.addEventListener('submit', (e) => {
@@ -35,6 +35,7 @@ import Weather from './weather';
       tempK = data.temp;
       tempKmin = data.temp_min;
       tempKmax = data.temp_max;
+      tempFeels = data.feels_like
       pTemp.innerHTML = Weather.convertKtoC(data.temp);
       pTempMin.innerHTML = Weather.convertKtoC(data.temp_min);
       pTempMax.innerHTML = Weather.convertKtoC(data.temp_max);
@@ -56,11 +57,13 @@ import Weather from './weather';
   });
   btnCelsiu.addEventListener('click', () => {
     pTemp.innerHTML = Weather.convertKtoC(tempK);
+    pFeelLike.innerHTML = Weather.convertKtoC(tempFeels);
     pTempMin.innerHTML = Weather.convertKtoC(tempKmin);
     pTempMax.innerHTML = Weather.convertKtoC(tempKmax);
   });
   btnFaren.addEventListener('click', () => {
     pTemp.innerHTML = Weather.convertKtoF(tempK);
+    pFeelLike.innerHTML = Weather.convertKtoF(tempFeels);
     pTempMin.innerHTML = Weather.convertKtoF(tempKmin);
     pTempMax.innerHTML = Weather.convertKtoF(tempKmax);
   });
