@@ -13,6 +13,11 @@ window.onload = function(){
   const pTempMin = document.querySelector('.temp_min')
   const pTempMax = document.querySelector('.temp_max')
   const pFeelLike = document.querySelector('.feels_like')
+  const btnCelsiu = document.querySelector('button.cel')
+  const btnFaren= document.querySelector('button.far')
+
+  let tempK, tempK_min, tempK_max;
+  let weather;
 
   form.addEventListener('submit',(e)=>{
     e.preventDefault();
@@ -24,8 +29,11 @@ window.onload = function(){
     }else{
       loading.setAttribute('src',loadingImg)
     }
-    const weather = new Weather(inputLocation.value)
+    weather = new Weather(inputLocation.value)
     weather.getWeatherData().then(data=>{
+      tempK = data.temp;
+      tempK_min = data.temp_min
+      tempK_max = data.temp_max
       pTemp.innerHTML = weather.convertKtoC(data.temp);
       pTempMin.innerHTML = weather.convertKtoC(data.temp_min)
       pTempMax.innerHTML = weather.convertKtoC(data.temp_max)
@@ -36,9 +44,23 @@ window.onload = function(){
       loading.setAttribute('src','');
       icon.setAttribute('src', `http://openweathermap.org/img/wn/${data.icon}@2x.png`);
       errorSpan.textContent = ""
+
+      //enable conversion buttons
+      btnCelsiu.disabled = false
+      btnFaren.disabled = false
     }).catch(e=>{
       loading.setAttribute('src','');
       errorSpan.textContent = "Enter a correct location. eg. Accra"
     })
+  })
+  btnCelsiu.addEventListener('click',(e)=>{
+    pTemp.innerHTML = weather.convertKtoC(tempK);
+      pTempMin.innerHTML = weather.convertKtoC(tempK_min)
+      pTempMax.innerHTML = weather.convertKtoC(tempK_max)
+  })
+  btnFaren.addEventListener('click',(e)=>{
+    pTemp.innerHTML = weather.convertKtoF(tempK);
+      pTempMin.innerHTML = weather.convertKtoF(tempK_min)
+      pTempMax.innerHTML = weather.convertKtoF(tempK_max)
   })
 }

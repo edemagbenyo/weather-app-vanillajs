@@ -6,7 +6,7 @@ export default class Weather {
     return `${parseFloat(parseFloat(tempK) - 273.15).toFixed(2)} ºC`;
   }
   convertKtoF(tempK) {
-    return `${((parseFloat(tempK) - 273.15) * 9) / 5 + 32} ºF`;
+    return `${Number(((parseFloat(tempK) - 273.15) * 9) / 5 + 32).toFixed(2)} ºF`;
   }
   async getWeatherData() {
     try {

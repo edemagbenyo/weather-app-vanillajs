@@ -12,9 +12,7 @@ form {
   align-items: center;
   justify-content: center;
 }
-form >*{
-  
-}
+
 form input[type='text']{
   width: 100%;
   height: 15px;
