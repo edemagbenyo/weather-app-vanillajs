@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather app</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Weather forecast</h1>
+    <section class="form">
+      <form action="" novalidate>
+        <input type="text" id="location" placeholder="Enter location" required>
+        <span class="error"></span>
+        <img src="" alt="" class="loading">
+        <button type="submit">Get Weather</button>
+      </form>
+    </section>
+
+    <div class="weather-card">
+      <h2>Today's Weather</h2>
+      <h1 class="temp">--</h1>
+        <img src="" alt="" class="icon">
+      <div class="location">
+        <p class="city">-</p>,
+        <p class="country">-</p>
+      </div>
+      <p class="feels_like"> Feels like <span>-- ºC</span></p>
+      <div class="minmax">
+        Min:<span class="temp_min"> -- </span>
+        Max:<span class="temp_max"> -- </span>
+      </div>
+
+      <div class="conversion">
+        <button class="cel" disabled>Celsuis</button>
+        <button class="far" disabled>Farenheit</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
