@@ -3,11 +3,11 @@ export default class Weather {
     this.location = location;
   }
 
-  convertKtoC(tempK) {
+  static convertKtoC(tempK) {
     return `${parseFloat(parseFloat(tempK) - 273.15).toFixed(2)} ºC`;
   }
 
-  convertKtoF(tempK) {
+  static convertKtoF(tempK) {
     return `${Number(((parseFloat(tempK) - 273.15) * 9) / 5 + 32).toFixed(2)} ºF`;
   }
 
