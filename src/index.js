@@ -17,7 +17,7 @@ import Weather from './weather';
   const btnFaren = document.querySelector('button.far');
 
   let tempK; let tempKmin; let
-    tempKmax,tempFeels;
+    tempKmax; let tempFeels;
   let weather;
 
   form.addEventListener('submit', (e) => {
@@ -35,7 +35,7 @@ import Weather from './weather';
       tempK = data.temp;
       tempKmin = data.temp_min;
       tempKmax = data.temp_max;
-      tempFeels = data.feels_like
+      tempFeels = data.feels_like;
       pTemp.innerHTML = Weather.convertKtoC(data.temp);
       pTempMin.innerHTML = Weather.convertKtoC(data.temp_min);
       pTempMax.innerHTML = Weather.convertKtoC(data.temp_max);
