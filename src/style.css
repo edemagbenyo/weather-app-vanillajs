@@ -1,0 +1,79 @@
+*{
+  margin:0;
+  padding:0
+}
+body{
+  background: #FFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form input[type='text']{
+  width: 100%;
+  height: 15px;
+  line-height: 20px;
+  font-size: 20px;
+  padding: 10px 5px;
+  border:none;
+  border-radius: 5px;
+}
+form button, .conversion button{
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 20px;
+  background-color: #3779E0;
+  border: none;
+  color:white;
+  border-radius: 5px;
+}
+form .error{
+  font-size: 12px;
+  margin: 5px 0 ;
+}
+.container >*{
+  width: 100%;
+  text-align: center;
+}
+.container{
+  background-color: #0F0F3B;
+  color:#FFFFFF;
+  width:25%;
+  height:auto;
+  margin:10px auto;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container h1{
+  font-size: 1em;
+  margin:10px 0 30px;
+}
+.container .weather-card > *{
+  margin: 20px 0 10px;
+}
+.weather-card h1.temp{
+  font-size: 35px;
+}
+.weather-card .feels_like{
+  font-size: 10px;
+}
+.weather-card img{
+  margin: 0;
+  width: 50px;
+}
+.location p{
+  display: inline;
+}
+.loading{
+  width: 40px;
+  margin:5px 0;
+}
