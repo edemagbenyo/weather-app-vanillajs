@@ -9,6 +9,10 @@
 
 Weather app display weather information of a specified location
 
+## Live version
+
+[Live Demo](http://edemagbenyo.com/weather-app-vanillajs/)
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
