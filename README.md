@@ -1,7 +1,7 @@
 # Weather App
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
-![GitHub repo size](https://img.shields.io/github/repo-size/edemagbenyo/weather-app-vanillajs/)
+![GitHub repo size](https://img.shields.io/github/repo-size/edemagbenyo/weather-app-vanillajs)
 ![GitHub contributors](https://img.shields.io/github/contributors/edemagbenyo/weather-app-vanillajs/)
 ![GitHub stars](https://img.shields.io/github/stars/edemagbenyo/weather-app-vanillajs/?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/weather-app-vanillajs/?style=social)
