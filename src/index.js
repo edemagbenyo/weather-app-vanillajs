@@ -1,8 +1,9 @@
 import './style.css';
 import loadingImg from './images/loading.gif';
 import Weather from './weather';
-
+import Giphy from './giphy'
 (() => {
+  const body = document.querySelector('body')
   const form = document.querySelector('form');
   const inputLocation = document.querySelector('#location');
   const icon = document.querySelector('.icon');
@@ -22,7 +23,7 @@ import Weather from './weather';
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-
+    console.log(process);
     const errorSpan = inputLocation.parentElement.querySelector('span');
     if (!inputLocation.checkValidity()) {
       errorSpan.textContent = 'Location is required';
@@ -50,6 +51,16 @@ import Weather from './weather';
       // enable conversion buttons
       btnCelsiu.disabled = false;
       btnFaren.disabled = false;
+
+      //Set the gif on the db
+      const gif = Giphy().search(data.gifimage);
+      gif.then(data=>{
+        // const
+        console.log(data);
+        body.style.backgroundImage = `url(${data.data.images.original.url})`;
+        body.style.backgroundRepeat='none';
+        body.style.backgroundSize='100%'
+      });
     }).catch(() => {
       loading.setAttribute('src', '');
       errorSpan.textContent = 'Enter a correct location. eg. Accra';
