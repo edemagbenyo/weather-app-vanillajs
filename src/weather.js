@@ -31,10 +31,8 @@ export default class Weather {
         feels_like: data.main.feels_like,
         weather: data.weather[0].main,
         icon: data.weather[0].icon,
-        gifimage:data.weather[0].description
+        gifimage: data.weather[0].description,
       };
-      console.log(data);
-      
       return weatherInfo;
     } catch (e) {
       throw new Error('Enter a proper location');
