@@ -7,7 +7,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/weather-app-vanillajs?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/edemagbenyo?style=social)
 
-Weather app displays weather information of a specified location. It display the current weather temperature and the minimum and maximum temperature of the day. It also shows an icon that depicts the weather for the day.
+Weather app displays weather information of a specified location. The application shows the current weather temperature with the minimum and maximum temperature of the day. It also shows an icon that depicts the weather for the day.
 
 ## Live version
 
