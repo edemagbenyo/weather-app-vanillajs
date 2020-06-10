@@ -1,6 +1,7 @@
 export default class Weather {
   constructor(location = 'accra') {
     this.location = location;
+    this.query = ('lat'in location) ?`lat=${location.lat}&lon=${location.long}` : `q=${this.location}`
   }
 
   static convertKtoC(tempK) {
@@ -14,8 +15,8 @@ export default class Weather {
   async getWeatherData() {
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${
-          this.location
+        `https://api.openweathermap.org/data/2.5/weather?${
+          this.query
         }&appid=f06f39597935c040f0dde71ac7cfd97c`,
         {
           mode: 'cors',
