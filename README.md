@@ -7,26 +7,35 @@
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/weather-app-vanillajs?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/edemagbenyo?style=social)
 
-Weather app displays weather information of a specified location. The application shows the current weather temperature with the minimum and maximum temperature of the day. It also shows an icon that depicts the weather for the day.
+This project is a vanilla Javascript project fetches weather information through https://home.openweathermap.org/ API. The information is sanitized and styled using CSS(no framework used).  
 
-## Live version
+Live version is available [here](http://edemagbenyo.com/weather-app-vanillajs/)
 
-[Live Demo](http://edemagbenyo.com/weather-app-vanillajs/)
+To report a bug or request a feature use this [link](https://github.com/edemagbenyo/weather-app-vanillajs/issues)
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
-* You have installed the latest version of `nodejs`
+* You have installed the latest version of `Node.js`
 * You have a `<Windows/Linux/Mac>` machine.
+
+## About the project
+
+This application displays weather information of a specified location. The application shows the current weather temperature with the minimum and maximum temperature of the day. It also shows an icon that depicts the weather for the day.
+
 
 ## Installing weather app
 
 To install weather app, follow these steps:
 
 1. Clone the project
-```
+```bash
 git clone git@github.com:edemagbenyo/weather-app-vanillajs.git
+
+cd weather-app-vanillajs
+
+npm run dev
 ```
 ## Using weather app
 
