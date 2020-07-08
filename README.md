@@ -7,7 +7,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/weather-app-vanillajs?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/edemagbenyo?style=social)
 
-This project is a vanilla Javascript project.It fetches weather information from https://home.openweathermap.org/ API. The information is sanitized and styled using CSS(no framework used).  
+This project is a vanilla Javascript project. It fetches weather information from https://home.openweathermap.org/ API. The information is sanitized and styled using CSS(no framework used).  
 
 
 ![Screenshot of the webpage](https://github.com/edemagbenyo/weather-app-vanillajs/blob/develop/screenshots/screen.png)
