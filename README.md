@@ -66,6 +66,11 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 * Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
 * Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
 
+## Known issues or improvement
+1. Save the city of the visiting user to display default weather information on subsequent visit.
+2. Display weather information from more that one city.
+
+
 ## License
 <!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
