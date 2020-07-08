@@ -7,7 +7,11 @@
 ![GitHub forks](https://img.shields.io/github/forks/edemagbenyo/weather-app-vanillajs?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/edemagbenyo?style=social)
 
-This project is a vanilla Javascript project fetches weather information through https://home.openweathermap.org/ API. The information is sanitized and styled using CSS(no framework used).  
+This project is a vanilla Javascript project.It fetches weather information from https://home.openweathermap.org/ API. The information is sanitized and styled using CSS(no framework used).  
+
+
+![Screenshot of the webpage](https://github.com/edemagbenyo/weather-app-vanillajs/blob/develop/screenshots/screen.png)
+
 
 Live version is available [here](http://edemagbenyo.com/weather-app-vanillajs/)
 
@@ -18,7 +22,6 @@ To report a bug or request a feature use this [link](https://github.com/edemagbe
 Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
 * You have installed the latest version of `Node.js`
-* You have a `<Windows/Linux/Mac>` machine.
 
 ## About the project
 
@@ -57,16 +60,11 @@ To contribute to the weather app, follow these steps:
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-## Contributors
-
-Thanks to the following people who have contributed to this project:
-
-* [@edemagbenyo](https://github.com/edemagbenyo) 📖
-
-
 ## Contact
 
-If you want to contact me you can reach me at <edem.agbenyo@gmail.com>.
+* LinkedIn: [@edemagbenyo](https://www.linkedin.com/in/edemagbenyo/) 
+* Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
+* Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
 
 ## License
 <!--- If you're not sure which open license to use see https://choosealicense.com/--->
