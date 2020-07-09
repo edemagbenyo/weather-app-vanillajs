@@ -67,7 +67,7 @@ Alternatively see the GitHub documentation on [creating a pull request](https://
 - LinkedIn: [Edem Agbenyo](https://www.linkedin.com/in/edemagbenyo/)
 - Email : [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
 
-## Known issues or improvement
+## Future features
 1. Save the city of the visiting user to display default weather information on subsequent visit.
 2. Display weather information from more that one city.
 
