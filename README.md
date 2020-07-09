@@ -60,11 +60,12 @@ To contribute to the weather app, follow these steps:
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-## Contact
-
-* LinkedIn: [@edemagbenyo](https://www.linkedin.com/in/edemagbenyo/) 
-* Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
-* Email: [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
+## Author
+- Github: [@edemagbenyo](https://github.com/edemagbenyo)
+- Portfolio: [edemagbenyo.com](https://edemagbenyo.com) 
+- Twitter: [Edem Agbenyo](https://twitter.com/edemAgbenyo)
+- LinkedIn: [Edem Agbenyo](https://www.linkedin.com/in/edemagbenyo/)
+- Email : [edem.agbenyo@gmail.com](mailto:edem.agbenyo@gmail.com)
 
 ## Known issues or improvement
 1. Save the city of the visiting user to display default weather information on subsequent visit.
